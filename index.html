@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<title>canvas 贪吃蛇</title>
+<script src="js/modernizr.min.js"></script>
+<style>
+@charset "gb2312";
+/* CSS Document */
+html{_background-image:url(about/blank);_background-attachment:fixed;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,p,th,td,input{margin:0;padding:0}
+body{ font-size:14px;font-family:Microsoft Yahei,arial;background:url(images/bg.jpg) repeat 0 0;padding-top:40px;min-width:1300px;}
+table{border-collapse:collapse;border-spacing:0;font-size:inherit;font:100%}
+img,input{border:0}
+em,strong,th,h1,h2,h3,h4,h5,h6,i{font-size:100%;font-style:normal;font-weight:normal}
+ol,ul,li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+a{text-decoration:none;cursor:pointer;outline:none;}
+a:hover{ text-decoration:none;}
+
+.wrapper{overflow: hidden;position: relative;text-align: center;z-index: 1;zoom:1}
+.game-stage {width:660px;height:480px;margin:0 auto;background: url(images/game/bg.jpg) no-repeat 0 0;cursor: pointer;}
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <canvas class="game-stage" width="660" height="480" ></canvas>
+</div>
+
+<script src="http://csol2.tiancity.com/homepage/event/common/jquery-1.7.2.min.js"></script>
+<script src="http://csol2.tiancity.com/homepage/event/common/common-1.2.2.min.js"></script>
+
+<script src="js/imgPreLoad.js"></script>
+<script src="js/jquery.snakeGame.min.js"></script>
+
+<script>
+    $(function(){
+        // 贪吃蛇初始化
+        if($("html").hasClass("canvas")){
+            // 当浏览器支持canvas时，载入游戏js，并初始化游戏            
+            $("head").linkAdd(['http://img1.tiancitycdn.com/project5/csol2/event/2016/1205event/js/jquery.snakeGame.min.js'],function(){
+                    // js加载成功后启动游戏
+                    var _snake = $(".game-stage").snakeGame({
+                        beforeStart : function(){
+                            // return false; 不启动游戏
+                            return true;
+                        },
+                        onGameover : function(score,deadMode){
+                            // 游戏结束弹窗
+                            alert("游戏结束！您的得分为："+score);
+                        }
+                    });
+            });
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+@charset "gb2312";
+/* CSS Document */
+html{_background-image:url(about/blank);_background-attachment:fixed;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,p,th,td,input{margin:0;padding:0}
+body{ font-size:14px;font-family:Microsoft Yahei,arial;background:url(../images/bg.jpg) repeat 0 0;padding-top:40px;min-width:1300px;}
+table{border-collapse:collapse;border-spacing:0;font-size:inherit;font:100%}
+img,input{border:0}
+em,strong,th,h1,h2,h3,h4,h5,h6,i{font-size:100%;font-style:normal;font-weight:normal}
+ol,ul,li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+a{text-decoration:none;cursor:pointer;outline:none;}
+a:hover{ text-decoration:none;}
+.clearfix{display:block}
+.clearfix:after{content:".";display:block;height:0;visibility:hidden;clear:both;overflow:hidden;}
+.clearfix{zoom:1}
+.pr{position:relative;}
+.pa{position:absolute;}
+.none{display:none;}
+.hdt{height:0;line-height:0px;overflow:hidden;text-indent:-9999px;_position:absolute;}
+img {border: 0 none;display: block;}
+#footer{ width:100%; padding:0; background:#000000; border-top:1px solid #1d1d1d}
+
+.wrapper{overflow: hidden;position: relative;text-align: center;z-index: 1;zoom:1}
+.bg {left: 50%;margin-left: -960px;position: absolute;top: 0;width: 1920px;z-index: -1;zoom:1;}
+.bg div {height:338px}
+.bg_01 {background:url(../images/bg_01.jpg) no-repeat center top}
+.bg_02 {background:url(../images/bg_02.jpg) no-repeat center top}
+.bg_03 {background:url(../images/bg_03.jpg) no-repeat center top}
+.bg_04 {background:url(../images/bg_04.jpg) no-repeat center top}
+.bg_05 {background:url(../images/bg_05.jpg) no-repeat center top}
+.bg_06 {background:url(../images/bg_06.jpg) no-repeat center top}
+.bg_07 {background:url(../images/bg_07.jpg) no-repeat center top}
+.bg_08 {background:url(../images/bg_08.jpg) no-repeat center top}
+.bg_09 {background:url(../images/bg_09.jpg) no-repeat center top}
+
+.sprite {background: url(../images/sprite.png) no-repeat;}
+.corner {position:absolute;width:33px;height:31px;background: url(../images/sprite.png) no-repeat;}
+.corner-top-left {background-position: 0 -175px;top:0;left:0;}
+.corner-top-right {background-position: -33px -175px;top:0;right:0;}
+.corner-bottom-left {background-position: 0 -206px;bottom:0;left:0;}
+.corner-bottom-right {background-position: -33px -206px;bottom:0;right:0;}
+
+.section{width:1000px;margin:0 auto;position:relative;}
+.section .con {width:1000px;text-align: left;line-height: 18px;font-size: 14px;}
+.section .con .title {width:1000px;height:80px;line-height: 70px;text-align: center;font-size: 36px;font-weight: bold;color: #fff;}
+.section .con .tips {width:1000px;line-height:22px;padding:15px 0;color:#ff9aff;text-align: center;}
+.section .con-2 .title,.section .con-3 .title {background-position: 370px -85px}
+.section .con-4 .title,.section .con-5 .title {background-position: 340px 0}
+
+.section .con-1 {height:614px}
+.section .con-1 .logo {width:140px;height:45px;position: absolute;top:22px;left: 0}
+.section .con-1 .register {width:203px;height:125px;background:url(../images/register.png) no-repeat 0 0;position: absolute;top:444px;left:533px;}
+.section .con-1 .download {width:203px;height:125px;background:url(../images/download.png) no-repeat 0 0;position: absolute;top:444px;left:730px;}
+.section .con-2 {height:535px;position: relative;}
+.section .con-2 .usr-bar {width:1000px;height:50px;line-height: 50px;text-align: right;color:#fff;}
+.section .con-2 .usr-bar a {color:#fff;}
+.section .con-2 .usr-bar .prize-list {margin-left: 10px}
+.section .con-2 .share-bar {position: absolute;right:0;top:50px;width:163px;height:28px;background: url(../images/share.png) no-repeat 0 0;}
+.section .con-2 .share-bar a {width:28px;height:28px;margin-left: 14px;float:right;display: block;}
+.section .con-2 .get-tickets {width:1000px;height:110px;padding-top:169px;background: url(../images/con-1.png) no-repeat 0 0;}
+.section .con-2 .get-tickets a {width:166.5px;height:65px;float:left;display: block;}
+.section .con-3 {height:785px}
+.section .con-3 .title {position: relative;}
+.section .con-3 .title .times {width:270px;position: absolute;top:0;left:615px;color:#b178ff;font-size: 18px;font-weight: bold;}
+.section .con-3 .game-bar {width:962px;height:480px;padding:18px;border:1px solid #b77af6;background: url(../images/bg_2.jpg) repeat 0 0;position: relative;}
+.section .con-3 .game-bar .no-game {display: block;width:660px;height:480px;background: url(../images/game/begin.jpg) no-repeat 0 0;cursor: pointer;float:left;}
+.section .con-3 .game-bar .game-stage {width:660px;height:480px;background: url(../images/game/bg.jpg) no-repeat 0 0;cursor: pointer;}
+.section .con-3 .game-bar .rank {width:285px;height:480px;float: right;background:url(../images/con-2-prize.png) no-repeat 10px 350px;}
+.section .con-3 .game-bar .rank .tit {width:285px;height:47px;line-height: 47px;color:#2e0e4e;font-size: 24px;font-weight: bold;border-bottom: 2px solid #2e0e4e;text-align: center;}
+.section .con-3 .game-bar .rank table {width:285px;color:#2e0e4e;text-align: center}
+.section .con-3 .game-bar .rank tr {height:35px;line-height: 35px;}
+.section .con-3 .game-bar .rank i {width:30px;height:30px;text-align: center;line-height: 30px;font-weight: bold;background: url(../images/sprite.png) no-repeat -103px -243px;color:#2e0e4e;display: block;margin:0 auto;}
+.section .con-3 .game-bar .rank .gold {background-position:0 -245px;color:#532d00;}
+.section .con-3 .game-bar .rank .silver {background-position:-35px -245px;color:#004f72; }
+.section .con-3 .game-bar .rank .copper {background-position:-70px -245px;color:#642700; }
+.section .con-3 .game-bar .rank .note {padding:10px 0;color:#fff;font-size: 12px;line-height: 20px}
+.section .con-4 {height:860px;}
+.section .con-4 .score {color: #b178ff;font-size: 18px;height:40px;line-height:40px;padding-bottom:20px;text-align: center}
+.section .con-4 .score .can-use {padding-left: 30px;}
+.section .con-4 .exchange {width:1010px;height:562px;background: url(../images/con-3.png) no-repeat 0 0;padding-top: 30px;}
+.section .con-4 .exchange li {height:53px;width: 188px;margin-right: 6px;padding:100px 0 0 7px;float: left;margin-bottom: 52px;}
+.section .con-4 .exchange li a {display:block;width:179px;height:35px;line-height: 35px;font-weight: bold;color: #fff;background-position: 0 -325px;text-align: center}
+.section .con-4 .exchange li a b {color:#ffd801; font-size: 18px;}
+.section .con-5 {height:250px}
+.section .con-5 .tips {text-align: left;padding: 30px 0 30px 220px;}
+
+/* 弹窗 */
+.popup {position:relative;background:url(../images/bg_2.jpg) repeat 0 0;padding:15px;border:1px solid #b77af6;display: none;}
+.popup .closeBtn {width: 40px;height: 40px;display: block;position: absolute;top:-1px;right: -43px;text-indent:-9999em;background-position:-210px -245px ;}
+.popup h1 {color:#eddcff;font-weight:bold;font-size: 24px;line-height: 50px;text-align: center;}
+.popup .share {height:60px;width:300px;padding-top: 30px;font-size: 24px;font-weight:bold;color:#fff;text-align: left;padding-left:100px;}
+.popup .share a {width: 60px;height: 60px;display: block;margin-right:25px;float: left;}
+.popup .share .weibo {background-position: -80px -175px}
+.popup .share .qq {background-position: -145px -175px}
+.popup .share .qqWeibo  {background-position: -210px -175px}
+
+
+.popList {width:695px;height:400px;}
+.popList .listBox {width:680px;height:320px;position: relative; overflow: hidden;text-align:center;margin:0 auto;}
+.popList .listBox .box-con {width:680px;height:280px;}
+.popList table {text-align:center;width:680px;color: #2d0d4e;}
+.popList table tr {background: #c096ea}
+.popList table tr.odd {background: #ab81d5}
+.popList table th {color:#eddcff;background:#572f80;height:40px;line-height:40px;}
+.popList table td {height:40px;line-height:40px;}
+.popList .listBox .tbTitle {width:680px;}
+.rollbar-path-vertical, .rollbar-path-horizontal {position: absolute;z-index: 100;}
+.rollbar-path-horizontal {bottom: 5px;height: 10px;left: 0;width: 100%;}
+.rollbar-path-vertical {height: 100%;right: 0;top: 0;width: 15px;}
+.rollbar-path-vertical {}
+.rollbar-path-horizontal {}
+.rollbar-handle {background-color: #572f80;left: 0;position: relative;top: 0;}
+.rollbar-handle {-moz-user-select: none;}
+.rollbar-path-vertical .rollbar-handle {height: 20%;width: 15px;}
+.rollbar-path-horizontal .rollbar-handle {height: 100%;width: 20%;}
+.rollbar-path-vertical, .rollbar-path-horizontal, .rollbar-handle {border-radius: 10px;}
+
+/* 虚拟领奖 */ 
+.virtual {padding:40px 25px; width:675px;height:260px;}
+.virtual h1 {padding-bottom: 20px;}
+.virtual .code-piece {width:90px;height:38px;float:left;margin-right: 6px;background: #572f80;line-height: 38px;text-align: center;color:#eddcff;}
+.virtual .code {display: none}
+.virtual .copy {width:89px;background-position:0 -408px;display: block;float: left;height: 37px;cursor: pointer;color:#fff;font-weight:bold;font-size: 16px;line-height: 37px;text-align: center;}
+.virtual .flow {display:block;width:196px;height:44px;margin: 30px 0 0 250px;float:left;background-position: 0 -280px;color:#fff;font-weight:bold;font-size: 16px;line-height: 44px;text-align: center;}
+
+.real,.textPop,.sharePop {width:430px;height:200px;text-align: center;}
+.real .note {color:#2d0d4e;padding-top:15px;line-height: 25px;font-weight: bold;}
+.real .note a {color: #fff713;text-decoration: underline;}
+
+.game-score {width:415px;height:250px;padding:30px 15px;}
+.game-score  .score-bar,.textPop .txt {color:#fff713;font-size:24px;font-weight: bold;line-height: 55px;text-align: center;}
+.textPop .txt {padding-top: 20px;}
+
+.zoomIn {animation: zoomIn .2s linear forwards;-webkit-animation: zoomIn .2s linear forwards;-moz-animation: zoomIn .2s linear forwards;-ms-animation: zoomIn .2s linear forwards;}
+.zoomIn-2 {animation: zoomIn .2s .1s linear forwards;-webkit-animation: zoomIn .2s .1s linear forwards;-moz-animation: zoomIn .2s .1s linear forwards;-ms-animation: zoomIn .2s .1s linear forwards;}
+@keyframes zoomIn {
+ 0% {transform: translate(200px,100px) scale(.3);opacity: 0}
+ 100% {transform: translate(0,0) scale(1);opacity: 1}
+}
+@-webkit-keyframes zoomIn {
+ 0% {-webkit-transform: translate(200px,100px) scale(.3);opacity: 0}
+ 100% {-webkit-transform: translate(0,0) scale(1);opacity: 1}
+}
+@-moz-keyframes zoomIn {
+ 0% {-moz-transform: translate(200px,100px) scale(.3);opacity: 0}
+ 100% {-moz-transform: translate(0,0) scale(1);opacity: 1}
+}
+@-ms-keyframes zoomIn {
+ 0% {-ms-transform: translate(200px,100px) scale(.3);opacity: 0}
+ 100% {-ms-transform: translate(0,0) scale(1);opacity: 1}
+}
